@@ -47,6 +47,9 @@ namespace LeetCode.mid
 
         public int GetRandom()
         {
+            if (values.Count == 0)
+                return Int32.MinValue;
+
             return values[rand.Next(0, values.Count)];
         }
     }
