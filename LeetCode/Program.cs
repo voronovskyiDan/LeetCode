@@ -7,8 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int[] res = ProductOfArrayExceptSelf.Solution(new int[] { 1, 2, 3, 4 });
-        foreach(int it in res)
-            Console.WriteLine(it);
+        int res = GasStation.Solution(new int[] { 2, 3, 4 }, new int[] { 3, 4, 3 });
+        Console.WriteLine(res);
     }
 }
