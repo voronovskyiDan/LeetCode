@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = FindTheFirstOccuranceInString.Solution("mississippi", "pi");
+        string res = ReverseWordsInSting.Solution("  hello world  ");
         Console.WriteLine(res);
     }
 }
