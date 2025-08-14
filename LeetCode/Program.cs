@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = LengthOfLastWord.Solution("ya");
+        int res = FindTheFirstOccuranceInString.Solution("mississippi", "pi");
         Console.WriteLine(res);
     }
 }
