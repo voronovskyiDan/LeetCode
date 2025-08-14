@@ -7,7 +7,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string res = ReverseWordsInSting.Solution("  hello world  ");
+        string res = ZigZag.Solution("PAYPALISHIRING", 3);
+
         Console.WriteLine(res);
     }
 }
