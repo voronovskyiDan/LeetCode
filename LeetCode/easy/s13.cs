@@ -21,35 +21,35 @@ namespace LeetCode.easy
 
 	internal class RomanToInt
 	{
-		public static int Solution(string s)
+		static int[] map;
+		public RomanToInt()
 		{
-			Dictionary<char, int> map = new Dictionary<char, int>()
-			{
-				{ 'I', 1 },
-				{ 'V', 5 },
-				{ 'X', 10 },
-				{ 'L', 50 },
-				{ 'C', 100 },
-				{ 'D', 500 },
-				{ 'M', 1000 },
-			};
+			map = new int[100];
+			map['I'] = 1;
+			map['V'] = 5;
+			map['X'] = 10;
+			map['L'] = 50;
+			map['C'] = 100;
+			map['D'] = 500;
+			map['M'] = 1000;
+        }
 
+        public static int Solution(string s)
+		{
 			int res = 0;
+			int lastVal = 0;
 
-			char[] v = s.ToCharArray();
-			for(int i = 0; i < v.Length; i++)
+			for(int i = s.Length - 1; i >= 0; i--)
 			{
-				int currentVal = map[v[i]];
-				if (v.Length > 1 && i != v.Length-1)
-				{
-					if (currentVal < map[v[i + 1]])
-						res -= currentVal;
-					else
-						res += currentVal;
-				}
-				else
+				int currentVal = map[s[i]];
+				if (lastVal > currentVal)
 				{
 					res += currentVal;
+                    lastVal = currentVal;
+                }
+                else
+				{
+					res -= currentVal;
 				}
 			}
 
