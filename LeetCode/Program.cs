@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = GasStation.Solution(new int[] { 2, 3, 4 }, new int[] { 3, 4, 3 });
+        int res = LengthOfLastWord.Solution("ya");
         Console.WriteLine(res);
     }
 }
