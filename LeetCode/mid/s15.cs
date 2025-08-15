@@ -37,7 +37,8 @@ namespace LeetCode.mid
                             r--;
 
                         l++;
-                        r--;
+                        r--; 
+                        //we can move both because we cant get correct tiple if we dont change 2 numbers (i is fixed in this case)
                     }
                     else if(sum < 0)
                         l++;
