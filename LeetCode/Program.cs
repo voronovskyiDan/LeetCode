@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = ValidPalindrome.Solution("A man, a plan, a canal: Panama");
+        bool res = IsSubsequence.Solution("", "ahbgdc");
 
         Console.WriteLine(res);
     }
