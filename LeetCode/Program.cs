@@ -7,8 +7,16 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = ContainerWithMostWater.Solution(new int[] { 1, 2, 3, 1000, 9 });
+        IList<IList<int>> res = ThreeSum.Solution(new int[] { 0, 0, 0, 0 });
 
-        Console.WriteLine(res);
+        foreach(var list in res)
+        {
+            foreach(var item in list)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+        }
     }
 }
