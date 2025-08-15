@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string res = ZigZag.Solution("PAYPALISHIRING", 3);
+        string res = IntigerToRoman.Solution(1234);
 
         Console.WriteLine(res);
     }
