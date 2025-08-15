@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string res = IntigerToRoman.Solution(1234);
+        bool res = ValidPalindrome.Solution("A man, a plan, a canal: Panama");
 
         Console.WriteLine(res);
     }
