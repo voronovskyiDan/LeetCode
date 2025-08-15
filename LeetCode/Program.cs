@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        IList<IList<int>> res = ThreeSum.Solution(new int[] { 0, 0, 0, 0 });
+        IList<IList<int>> res = FourSum.Solution(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
 
         foreach(var list in res)
         {
