@@ -7,16 +7,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        IList<IList<int>> res = FourSum.Solution(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
+        bool res = RansomNote.Solution("a", "b");
 
-        foreach(var list in res)
-        {
-            foreach(var item in list)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
-
-        }
+        Console.WriteLine(res);
     }
 }
