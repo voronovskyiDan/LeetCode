@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = RansomNote.Solution("a", "b");
+        bool res = IsomorphicStrings.Solution("egg", "add");
 
         Console.WriteLine(res);
     }
