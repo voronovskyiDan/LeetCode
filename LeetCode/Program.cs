@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = ValidAnagram.Solution("anagram", "nagaram");
+        bool res = HappyNumber.Solution(2);
 
         Console.WriteLine(res);
     }
