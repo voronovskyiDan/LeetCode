@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = IsomorphicStrings.Solution("egg", "add");
+        bool res = ValidAnagram.Solution("anagram", "nagaram");
 
         Console.WriteLine(res);
     }
