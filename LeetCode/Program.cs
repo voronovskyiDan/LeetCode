@@ -7,8 +7,15 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = HappyNumber.Solution(2);
+        IList<IList<string>> res = GroupAnagram.Solution(new string[] { "abets", "bead", "remain", "betas", "abed", "baste", "airline", "leading", "beast", "dealing", "beats", "airmen", "marine", "single", "bade", "aligned" });
 
-        Console.WriteLine(res);
+        foreach(var group in res)
+        {
+            foreach(var an in group)
+            {
+                Console.Write(an + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
