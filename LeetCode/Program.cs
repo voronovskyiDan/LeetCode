@@ -7,11 +7,20 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        IList<string> res = SummaryRanges.Solution(new int[] { 0, 2, 3, 4, 6, 8, 9 });
+        int[][] res = MergeIntervals.Solution(new int[][] {
+                new int[] { 1, 3 },
+                new int[] { 2, 6 },
+                new int[] { 8, 10 },
+                new int[] { 15, 18 }
+            });
 
-        foreach(var it in res)
+        foreach(var group in res)
         {
-            Console.Write(it + " ");
+            foreach(var it in group)
+            {
+                Console.Write(it + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
