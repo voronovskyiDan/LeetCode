@@ -7,8 +7,11 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = LongestConsecutiveSequence.Solution(new int[] { 100, 4, 200, 1, 3, 2 });
+        IList<string> res = SummaryRanges.Solution(new int[] { 0, 2, 3, 4, 6, 8, 9 });
 
-        Console.WriteLine(res);
+        foreach(var it in res)
+        {
+            Console.Write(it + " ");
+        }
     }
 }
