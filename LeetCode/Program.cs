@@ -8,13 +8,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = MinimalNumberOfArrowsToBurstBallons.Solution(new int[][]
-        {
-            new int[]{ 10,16 },
-            new int[]{ 2,8 },
-            new int[]{ 1,6 },
-            new int[] { 7, 12 }
-        });
+        string res = SimplifyPath.Solution("/home/user/Documents/../Pictures");
         Console.WriteLine(res);
     }
 }
