@@ -11,7 +11,7 @@ namespace LeetCode.easy
     {
         public static bool Solution(TreeNode root, int targetSum)
         {
-            if (root == null || targetSum < 0)
+            if (root == null )
                 return false;
             if (targetSum - root.val == 0 && root.left == null && root.right == null)
                 return true;
