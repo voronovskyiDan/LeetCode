@@ -8,8 +8,13 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        TreeNode root = new(1, null, new TreeNode(2,null,null));
-        int res = MaximumDepthOfBinaryTree.Solution(root);
+        int res = MinimalNumberOfArrowsToBurstBallons.Solution(new int[][]
+        {
+            new int[]{ 10,16 },
+            new int[]{ 2,8 },
+            new int[]{ 1,6 },
+            new int[] { 7, 12 }
+        });
         Console.WriteLine(res);
     }
 }
