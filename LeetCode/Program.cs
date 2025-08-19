@@ -8,9 +8,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        bool res = SymetricTree.Solution(new TreeNode(1,
-            new TreeNode(2, new TreeNode(4,null,null), new TreeNode(3, null, null)),
-            new TreeNode(2, new TreeNode(3, null, null), new TreeNode(4, null, null))));
+        int res = MinimumSizeSubarraySum.Solution(7, new int[] { 2, 3, 1, 2, 4, 3 });
         Console.WriteLine(res);
     }
 }
