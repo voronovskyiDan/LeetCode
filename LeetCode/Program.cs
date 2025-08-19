@@ -8,7 +8,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int res = EvalRPN.Solution(new string[] { "2", "1", "+", "3", "*" });
+        bool res = SymetricTree.Solution(new TreeNode(1,
+            new TreeNode(2, new TreeNode(4,null,null), new TreeNode(3, null, null)),
+            new TreeNode(2, new TreeNode(3, null, null), new TreeNode(4, null, null))));
         Console.WriteLine(res);
     }
 }
