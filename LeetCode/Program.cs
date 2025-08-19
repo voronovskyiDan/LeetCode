@@ -8,7 +8,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string res = SimplifyPath.Solution("/home/user/Documents/../Pictures");
+        int res = EvalRPN.Solution(new string[] { "2", "1", "+", "3", "*" });
         Console.WriteLine(res);
     }
 }
