@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.supportClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,7 @@ namespace LeetCode.mid
 {
     class AddTwoNumber
     {
-        public class ListNode {
-            public int val;
-             public ListNode next;
-             public ListNode(int val=0, ListNode next=null) {
-                  this.val = val;
-                  this.next = next;
-              }
-        }
+       
         public static ListNode Solution(ListNode l1, ListNode l2) {
             int sum = 0, bias = 0;
 
