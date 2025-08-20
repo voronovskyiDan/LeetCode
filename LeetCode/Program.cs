@@ -8,22 +8,25 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        /* ListNode root = new ListNode(3);
-         ListNode cycleNode = new ListNode(2);
-         ListNode cycleNode2 = new ListNode(0);
-         ListNode cycleNode3 = new ListNode(4);
+         ListNode root1 = new ListNode(1);
+         ListNode cycleNode1 = new ListNode(2);
+         ListNode cycleNode2 = new ListNode(4);
 
-         root.next = cycleNode;
-         cycleNode.next = cycleNode2;
-         cycleNode2.next = cycleNode3;
-         cycleNode3.next = cycleNode;*/
-        ListNode root = new ListNode(1);
-        ListNode cycleNode = new ListNode(2);
+         root1.next = cycleNode1;
+         cycleNode1.next = cycleNode2;
 
-        root.next = cycleNode;
-        cycleNode.next = null;
+        ListNode root2 = new ListNode(1);
+        ListNode cycleNode2_1 = new ListNode(3);
+        ListNode cycleNode2_2 = new ListNode(4);
 
-        bool res = LinkedListCycle.Solution(root);
-        Console.WriteLine(res);
+        root2.next = cycleNode2;
+        cycleNode2_1.next = cycleNode2_2;
+
+        ListNode res = MergeTwoSortedList.Solution(root1, root2);
+        while(res != null)
+        {
+            Console.Write(res.val + " ");
+            res = res.next;
+        }
     }
 }
