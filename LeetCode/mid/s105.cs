@@ -9,7 +9,7 @@ namespace LeetCode.mid
 {
     class ConstructBinaryTree
     {
-        private int preIndex = 0;
+        private static int preIndex = 0;
         public static TreeNode Solution(int[] preorder, int[] inorder)
         {
             if (preorder.Length == 0) return null;
