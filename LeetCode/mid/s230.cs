@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.easy
+namespace LeetCode.mid
 {
     internal class KthSmallestElementInBST
     {
