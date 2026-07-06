@@ -9,10 +9,10 @@ namespace LeetCode.easy
 {
     class MinimumAbsoluteDifferenceInBST
     {
-        private int min = int.MaxValue;
-        private int? prev = null;
+        private static int min = int.MaxValue;
+        private static int? prev = null;
 
-        public int Solution(TreeNode root)
+        public static int Solution(TreeNode root)
         {
             if (root == null) return min;
 
